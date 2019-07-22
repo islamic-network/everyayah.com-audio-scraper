@@ -29,7 +29,7 @@ foreach ($ayahs->data->surahs as $surah) {
         $url = $baseUrl . $reciter . '/' . $sn . $an . '.mp3';
         $file = file_get_contents($url);
         if ($file === false) {
-            echo $sn.an . " failed\n";
+            echo $sn.$an . " failed\n";
 
         }
         
